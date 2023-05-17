@@ -63,10 +63,10 @@ plays.forEach(play => {
         popupsign.innerHTML = `
         <h3>Start listening with a free Listen account</h3>
         <div>
-        <a href="sign.html"><span>Sign up free</span></a>
+        <a href="Sign.html"><span>Sign up free</span></a>
         <span>Download app</span>
         <div>
-        <p>Already have an account? <a href="login.html">login</a> </p>
+        <p>Already have an account? <a href="Login.html">login</a> </p>
         </div>
         </div>
                             `;
