@@ -39,7 +39,7 @@ body {
 }
 @media (max-width:767px) {
     .logo i {
-    left: 90px;
+    left: 80px;
     top: -2px;
     }
 }
