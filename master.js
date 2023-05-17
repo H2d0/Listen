@@ -66,7 +66,7 @@ plays.forEach(play => {
         <a href="Sign.html"><span>Sign up free</span></a>
         <span>Download app</span>
         <div>
-        <p>Already have an account? <a href="Login.html">login</a> </p>
+        <p>Already have an account? <a href="Login.html">Login</a> </p>
         </div>
         </div>
                             `;
