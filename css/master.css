@@ -222,7 +222,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.content .navbar .nav{
+/* .content .navbar .nav{
     position: relative;
 }
 .content .navbar .nav i{
@@ -262,38 +262,38 @@ body {
                 font-size: 9px;
                 padding: 10px;
         }
-}
-.content .navbar2{
+} */
+/* .content .navbar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-.content .navbar.navbar2 .signUp {
+} */
+.content .navbar .signUp {
     margin-right: 25px;
 }
 
-.content .navbar2 .signUp button {
+.content .navbar .signUp button {
     background-color: #101010;
     border: none;
     padding: 10px;
     transition: 0.3s;
 }
 
-.content .navbar2 .signUp button a {
+.content .navbar .signUp button a {
     text-decoration: none;
     color: #a7a7a7;
     transition: 0.5s;
 }
 
-.content .navbar2 .signUp button:hover {
+.content .navbar .signUp button:hover {
     transform: scale(1.2);
 }
 
-.content .navbar2 .signUp button:hover a {
+.content .navbar .signUp button:hover a {
     color: whitesmoke;
 }
 
-.content .navbar2 .signUp button a span {
+.content .navbar .signUp button a span {
     font-size: 15px;
     font-weight: bold;
 }
@@ -301,7 +301,7 @@ body {
 /* .content .navbar .LogIn{
     margin-right: 5px;
 } */
-.content .navbar2 .LogIn button {
+.content .navbar .LogIn button {
     background-color: whitesmoke;
     border: none;
     padding: 15px 30px;
@@ -309,21 +309,21 @@ body {
     transition: 0.3s;
 }
 
-.content .navbar2 .LogIn button:hover {
+.content .navbar .LogIn button:hover {
     box-shadow: 0 2px 14px rgb(204 208 221 / 76%), 0 12px 87px rgba(0, 0, 0, 0.1);
 }
 
-.content .navbar2 .LogIn button a {
+.content .navbar .LogIn button a {
     text-decoration: none;
     color: black;
 }
 
-.content .navbar2 .LogIn button a span {
+.content .navbar .LogIn button a span {
     font-size: 15px;
     font-weight: bold;
 }
-@media (max-width:767px){
-    .content .navbar2 .LogIn button a span {
+/* @media (max-width:767px){
+    .content .navbar .LogIn button a span {
             font-size: 13px;
             font-weight: bold;
         }
@@ -334,7 +334,7 @@ body {
                         border-radius: 20px;
                         transition: 0.3s;
                 }
-}
+} */
 /* End Content */
 /* Start boxs */
 .Foucs-box {
