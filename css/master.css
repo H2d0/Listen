@@ -598,7 +598,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: #6e6e6e;
     border: none;
-    padding: 80px 100px;
+    padding: 70px 90px;
     z-index: 1001;
     border-radius: 10px;
     display: flex;
@@ -694,7 +694,7 @@ body {
 
 .sign-box p {
     font-size: 12px;
-    width: 200px;
+    width: 150px;
 }
 
 .sign-box p a {
@@ -726,11 +726,11 @@ body {
     }
 
     .sign-box div span:first-child {
-        width: 170px;
+        width: 150px;
     }
 
     .sign-box div span:nth-child(2) {
-        width: 170px;
+        width: 150px;
     }
 
     .sign-box div a {
