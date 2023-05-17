@@ -1,0 +1,156 @@
+
+body{
+    font-family: "Poppins", sans-serif;
+        background-color: #121212;
+        ;
+        color: #f6f6f6;
+        user-select: none;
+}
+.logo {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    height: 80px;
+        margin-top: -30px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: -17px;
+    text-align: revert;
+    padding: 20px;
+}
+
+.logo i {
+    left: 10px;
+        position: absolute;
+        top: 25px;
+        font-size: 30px;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    padding: 20px 40px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+/* @media (max-width:767px) {
+    .container{
+
+    }
+} */
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.container .hr2 {
+    width: 60%;
+    text-align: center;
+    position: relative;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: #c6c4c4;
+    left: 90px;
+    transform: translateY(-50%);
+    margin-top: 40px;
+}
+
+.container .hr2 p {
+    position: absolute;
+        font-size: 15px;
+        padding: 10px;
+        background-color: black;
+        top: -34px;
+        left: 95px;
+        color: #9d9494;
+        font-weight: bold;
+}
+
+/* .container span:first-of-type {
+    background-color: #405A93;
+    color: whitesmoke;
+    border: none;
+} */
+
+.container span:last-of-type svg {
+    margin: -4px 5px;
+}
+
+.container span {
+display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    border: 2px solid #9e9e9e;
+    padding: 10px;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container span i {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.container span:hover {
+    transform: scale(1.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 15px;
+        background-color: #1db954;
+        color: #060505;
+        border: none;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        border-radius: 20px;
+        margin-top: 10px !important;
+}
+
+button:hover {
+    background-color: #1aa34a;
+}
+
+.signup-link {
+    font-size: 1.2rem;
+}
+.signup-link a {
+    text-decoration: none;
+        color: #1db954;
+        font-weight: bold;
+}

@@ -1,0 +1,1004 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: #f6f6f6;
+    user-select: none;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Start sidebar */
+.sidebar {
+    width: 250px;
+    height: 100%vh;
+    position: relative;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+}
+
+.sidebar .icon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar .icon h1 {
+    font-weight: normal;
+    font-family: cursive;
+}
+
+.sidebar .icon i {
+    position: absolute;
+    left: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sidebar .frist-Link {
+    margin: 0 15px 40px;
+}
+
+.sidebar .frist-Link ul li {
+    padding: 10px;
+}
+
+.sidebar .frist-Link ul li a {
+    text-decoration: none;
+    color: #f5f5f5ab;
+    font-family: fangsong;
+    transition: 0.3s;
+}
+
+.sidebar .frist-Link ul li a:hover,
+.sidebar .frist-Link ul li a.active {
+    color: whitesmoke;
+}
+
+.sidebar .frist-Link ul li a span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sidebar .frist-Link ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .frist-Link ul li a .two {
+    position: relative;
+}
+
+.sidebar .frist-Link ul li a .two::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    left: 4px;
+    top: 3px;
+    transition: 0.3s;
+}
+
+.sidebar .frist-Link ul li a:hover .two::after,
+.sidebar .frist-Link ul li a.active .two::after {
+    background-color: whitesmoke;
+}
+
+.sidebar .second-Links {
+    margin: 0 15px 40px;
+}
+
+.sidebar .second-Links ul li {
+    padding: 10px;
+}
+
+.sidebar .second-Links ul li a {
+    text-decoration: none;
+    color: #f5f5f5ab;
+    font-family: fangsong;
+    transition: 0.3s;
+}
+
+.sidebar .second-Links ul li a:hover,
+.sidebar .second-Links ul li a.active {
+    color: whitesmoke;
+}
+
+.sidebar .second-Links ul li a span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sidebar .second-Links ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .second-Links ul li a .heart {
+    background-image: linear-gradient(45deg, #7272ef, #eeeeee7d);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .sidebar .icon h1 {
+        font-size: 25px;
+    }
+
+    .sidebar .icon i {
+        font-size: 25px;
+        left: 10px;
+    }
+
+    .sidebar ul li a i {
+        margin-left: -15px !important;
+        font-size: 15px !important;
+    }
+
+    .sidebar ul li a span {
+        font-size: 13px !important;
+        font-weight: bold !important;
+    }
+
+    .sidebar .frist-Link ul li a .two::after {
+        left: 3px;
+        width: 6px;
+        height: 6px;
+        top: 3px;
+        text-align: center;
+    }
+}
+
+.sidebar .links-new {
+    margin: 0 15px 40px;
+}
+
+.sidebar .links-new ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.sidebar .links-new ul li {
+    margin: 15px;
+}
+
+.sidebar .links-new ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #a4a4a4;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar .links-new ul li a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+/* End sidebar */
+/* Start Content */
+.content {
+    width: calc(100% - 250px);
+}
+
+@media (max-width: 767px) {
+    .content {
+        width: calc(100% - 150px);
+    }
+}
+
+.content .navbar {
+    height: 70px;
+    width: 100%;
+    background-color: #101010;
+    box-shadow: 0 10px 20px rgba(154, 160, 185, 0.05),
+        0 20px 48px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .navbar .nav{
+    position: relative;
+}
+.content .navbar .nav i{
+    position: absolute;
+    color: black;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+}
+.content .navbar .nav input{
+    background-color: whitesmoke;
+    border: 2px solid #a7a7a7;
+    border-radius: 60px;
+    width: 300px;
+    text-align: start;
+    font-size: 14px;
+    padding: 10px;
+}
+.content .navbar .nav .foucs:focus{
+    outline: #101010;
+}
+@media (max-width:767px){
+    .content .navbar .nav i {
+            position: absolute;
+            color: black;
+            right: 3px;
+            top: 10px;
+            font-size: 15px;
+        }
+    
+        .content .navbar .nav input {
+            background-color: whitesmoke;
+                border: 2px solid #a7a7a7;
+                border-radius: 60px;
+                width: 150px;
+                text-align: start;
+                font-size: 9px;
+                padding: 10px;
+        }
+}
+.content .navbar2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content .navbar.navbar2 .signUp {
+    margin-right: 25px;
+}
+
+.content .navbar2 .signUp button {
+    background-color: #101010;
+    border: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.content .navbar2 .signUp button a {
+    text-decoration: none;
+    color: #a7a7a7;
+    transition: 0.5s;
+}
+
+.content .navbar2 .signUp button:hover {
+    transform: scale(1.2);
+}
+
+.content .navbar2 .signUp button:hover a {
+    color: whitesmoke;
+}
+
+.content .navbar2 .signUp button a span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* .content .navbar .LogIn{
+    margin-right: 5px;
+} */
+.content .navbar2 .LogIn button {
+    background-color: whitesmoke;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.content .navbar2 .LogIn button:hover {
+    box-shadow: 0 2px 14px rgb(204 208 221 / 76%), 0 12px 87px rgba(0, 0, 0, 0.1);
+}
+
+.content .navbar2 .LogIn button a {
+    text-decoration: none;
+    color: black;
+}
+
+.content .navbar2 .LogIn button a span {
+    font-size: 15px;
+    font-weight: bold;
+}
+@media (max-width:767px){
+    .content .navbar2 .LogIn button a span {
+            font-size: 13px;
+            font-weight: bold;
+        }
+                .content .navbar2 .LogIn button {
+                    background-color: whitesmoke;
+                        border: none;
+                        padding: 7px 7px;
+                        border-radius: 20px;
+                        transition: 0.3s;
+                }
+}
+/* End Content */
+/* Start boxs */
+.Foucs-box {
+    margin-left: 5px;
+    margin-bottom: 21px;
+    margin-top: 20px;
+}
+
+.Foucs-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.Foucs-box a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.Foucs-box a:hover {
+    text-decoration: underline;
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.boxs .box {
+    background-color: #1e1d1d;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.boxs .box .play {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    z-index: 100;
+    background-color: #0ef6cc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 100px;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.boxs .box:hover {
+    background-color: #323030;
+}
+
+.boxs .box:hover .play {
+    display: block;
+    animation: top-dawn 0.8s infinite;
+}
+
+@keyframes top-dawn {
+
+    0%,
+    20%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.boxs .box .play:hover {
+    transform: scale(0.9);
+}
+
+.boxs .box .images {
+    position: relative;
+    margin: 15px;
+}
+
+.boxs .box .images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.boxs .box .images i {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #eff7ef;
+}
+
+/* @media (max-width:767px) {
+    .boxs .box .images i {
+        left: 50px;
+            top: 10px;
+    }
+} */
+/* .box .box-info{
+    /* text-align: center; 
+} */
+.box .box-info h3 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.box .box-info p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #a3a2a2;
+    margin: 10px;
+}
+
+/* End boxs */
+/* Start footer */
+.footer {
+    margin-top: 50px;
+    display: flex;
+    width: calc(100% - 250px);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .all div {
+    margin-left: 20px;
+}
+
+.footer .all div:nth-child(2) {
+    margin-left: 60px;
+}
+
+.footer .all div:last-child {
+    margin-left: 60px;
+}
+
+.footer .all h3 {
+    font-size: 15px;
+}
+
+.footer .all ul li {
+    margin-bottom: 10px;
+}
+
+.footer .all ul li a {
+    text-decoration: none;
+    color: #787878;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer .all ul li a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.footer .icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer .icon i {
+    font-size: 20px;
+    background-color: #2e2f32;
+    margin-left: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.footer .icon i:hover {
+    background-color: #767778;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .all div {
+        margin-left: 20px;
+    }
+
+    .footer .all div:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    .footer .all div:last-child {
+        margin-left: 20px;
+    }
+
+    .footer .icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .footer .all {
+        margin: auto;
+        flex-wrap: wrap;
+    }
+}
+
+.content .hr {
+    border: 1px solid #2b2a2a;
+    width: 90%;
+    height: 1px;
+    margin: 20px auto;
+}
+
+.content .last {
+    margin: 30px 15px;
+}
+
+/* End footer */
+.popup-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.popup-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6e6e6e;
+    border: none;
+    padding: 80px 100px;
+    z-index: 1001;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-box .Close {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.popup-box .Close:hover {
+    transform: scale(1.1);
+}
+
+.new-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-box .box {
+    width: 50%;
+}
+
+.new-box .box .images {
+    position: relative;
+}
+
+.new-box .box .images img {
+    width: 200%;
+    height: 200px;
+    margin-left: -60px;
+}
+
+.new-box .box .images i {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.sign-box {
+    width: 50%;
+}
+
+.sign-box h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px -10px;
+    width: 250px;
+}
+
+.sign-box div span:first-child {
+    font-size: 15px;
+    background-color: #4fc649;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: black;
+    transition: 0.3s;
+    width: 180px;
+}
+
+.sign-box div a {
+    text-decoration: none;
+}
+
+.sign-box div span:nth-child(2) {
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-top: 15px;
+    transition: 0.3s;
+    width: 180px;
+}
+
+.sign-box div span:hover {
+    transform: scale(1.1);
+}
+
+.sign-box p {
+    font-size: 12px;
+    width: 200px;
+}
+
+.sign-box p a {
+    text-decoration: none;
+    color: #fffafa;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .new-box .box .images img {
+        width: 300%;
+        height: 200px;
+        margin-left: -80px;
+    }
+
+    .new-box .box .images i {
+        position: absolute;
+        right: 80px;
+        top: 10px;
+    }
+
+    .sign-box h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 25px -10px;
+        text-align: center;
+        width: 170px;
+    }
+
+    .sign-box div span:first-child {
+        width: 170px;
+    }
+
+    .sign-box div span:nth-child(2) {
+        width: 170px;
+    }
+
+    .sign-box div a {
+        text-decoration: none;
+    }
+}
+
+/* Start Po */
+.creat {
+    position: relative;
+}
+
+.creat .popup-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.creat .popup {
+    position: absolute;
+    background-color: #0063c3;
+    left: 177px;
+    z-index: 1100;
+    width: 300px;
+    top: -11px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+.creat .popup::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent #0063c3 transparent transparent;
+    left: -20px;
+    top: 21px;
+}
+
+.creat .popup .popup-info h2 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.creat .popup .popup-info p {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -4px;
+    line-height: 1.3;
+}
+
+.creat .popup .popup-span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.creat .popup .popup-span span:first-child {
+    font-size: 15px;
+    margin-right: 35px;
+    color: #545454b8;
+    transition: 0.3s;
+}
+
+.creat .popup .popup-span span:first-child:hover {
+    color: whitesmoke;
+}
+
+.creat .popup .popup-span .log {
+    margin-right: 10px;
+    padding: 8px;
+    background-color: whitesmoke;
+    color: #363535;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.creat .popup .popup-span .log:hover {
+    color: #363535;
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .creat .popup {
+        left: 130px;
+        width: 200px;
+        top: -11px;
+    }
+}
+.creat2 {
+    position: relative;
+}
+
+.creat2 .popup-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.creat2 .popup2 {
+    position: absolute;
+    background-color: #0063c3;
+    left: 177px;
+    z-index: 1100;
+    width: 300px;
+    top: -11px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+.creat2 .popup2::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent #0063c3 transparent transparent;
+    left: -20px;
+    top: 21px;
+}
+
+.creat2 .popup2 .popup-info h2 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.creat2 .popup2 .popup-info p {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -4px;
+    line-height: 1.3;
+}
+
+.creat2 .popup2 .popup-span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.creat2 .popup2 .popup-span span:first-child {
+    font-size: 15px;
+    margin-right: 35px;
+    color: #545454b8;
+    transition: 0.3s;
+}
+
+.creat2 .popup2 .popup-span span:first-child:hover {
+    color: whitesmoke;
+}
+
+.creat2 .popup2 .popup-span .log2 {
+    margin-right: 10px;
+    padding: 8px;
+    background-color: whitesmoke;
+    color: #363535;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.creat2 .popup2 .popup-span .log2:hover {
+    color: #363535;
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .creat2 .popup2 {
+        left: 130px;
+        width: 200px;
+        top: -11px;
+    }
+}
+.creat3 {
+    position: relative;
+}
+
+.creat3 .popup-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.creat3 .popup3 {
+    position: absolute;
+    background-color: #0063c3;
+    left: 177px;
+    z-index: 1100;
+    width: 300px;
+    top: -11px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+.creat3 .popup3::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent #0063c3 transparent transparent;
+    left: -20px;
+    top: 21px;
+}
+
+.creat3 .popup3 .popup-info h2 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.creat3 .popup3 .popup-info p {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -4px;
+    line-height: 1.3;
+}
+
+.creat3 .popup3 .popup-span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.creat3 .popup3 .popup-span span:first-child {
+    font-size: 15px;
+    margin-right: 35px;
+    color: #545454b8;
+    transition: 0.3s;
+}
+
+.creat3 .popup3 .popup-span span:first-child:hover {
+    color: whitesmoke;
+}
+
+.creat3 .popup3 .popup-span .log3 {
+    margin-right: 10px;
+    padding: 8px;
+    background-color: whitesmoke;
+    color: #363535;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.creat3 .popup3 .popup-span .log3:hover {
+    color: #363535;
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .creat3 .popup3 {
+        left: 130px;
+        width: 200px;
+        top: -11px;
+    }
+}
+
+/* End Po */
